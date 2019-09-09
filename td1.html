@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Première page jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type='text/javascript'>
+        $(document).ready(function(){
+        $(".test").click(function(){
+        $(this).hide();
+        });
+
+        $("#b1").click(function(){
+        $(".test").hide();
+        });
+
+        $("#b2").click(function(){
+        $(".test").show();
+        });
+
+        });
+        </script>
+    </head>
+    <body>
+        <h2 class="test autre">Entête</h2>
+        <p class="test">Un paragraphe.</p>
+        <p>Un autre paragraphe.</p>
+        <button id="b1">Effacer les éléments de classe test</button>
+        <button id="b2">Afficher les éléments de classe test</button>
+    </body>
+</html>
