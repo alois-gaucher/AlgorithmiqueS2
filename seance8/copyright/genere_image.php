@@ -11,9 +11,9 @@ $noir = imagecolorallocate($im, 0, 0, 0);
 $blanc = imagecolorallocate($im, 255, 255, 255);
 $rouge = imagecolorallocate($im, 255, 0, 0);
 $font = './arial.ttf'; $texte = '© Aloïs GAUCHER';
-$copyrightx = $imagex - $imagex * 0.10;
-$copyrighty = $imagey - $imagey * 0.01;
-imagettftext($im, $imagey * 0.05, 0, $copyrightx, $copyrighty, $blanc, $font, $texte);
+$copyrightx = 10;
+$copyrighty = $imagey - 10;
+imagettftext($im, $imagey * 0.03, 0, $copyrightx, $copyrighty, $blanc, $font, $texte);
 imagepng($im); imagedestroy($im);
 ?>
 
